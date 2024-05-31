@@ -185,6 +185,35 @@ header {
   align-self: flex-end;
 }
 
+/* 문제3 */
+.problem3 {
+  justify-content: center;
+}
+
+.big-box {
+  width: 400px;
+  height: 400px;
+  background-color: #333;
+  color: white;
+  border: 3px solid #fff;
+  position: relative;
+}
+
+.small-box {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(144, 19, 254);
+  color: white;
+  border: 3px solid #fff;
+}
+
+.item3 {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+
 /* 푸터 스타일 */
 footer {
   /* 하단 고정 */
