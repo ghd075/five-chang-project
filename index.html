@@ -6,6 +6,8 @@
     <title>Document</title>
     <!-- 공통 스타일 -->
     <link rel="stylesheet" href="style.css" />
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
     <div id="top">
@@ -22,7 +24,26 @@
           </div>
         </div>
       </header>
-      <main></main>
+      <main>
+        <section class="tapInfoContainer cen">
+          <article class="tapContainer">
+            <div class="m-auto TabbtnGroup">
+              <div class="tabbtn tactive">Problem 1</div>
+              <div class="tabbtn">Problem 2</div>
+              <div class="tabbtn">Problem 3</div>
+              <div class="tabbtn">Problem 4</div>
+              <div class="tabbtn">Problem 5</div>
+            </div>
+            <div class="TabcontBox">
+              <div class="tabcont">문제1</div>
+              <div class="tabcont">문제2</div>
+              <div class="tabcont">문제3</div>
+              <div class="tabcont">문제4</div>
+              <div class="tabcont">문제5</div>
+            </div>
+          </article>
+        </section>
+      </main>
       <footer>
         <div class="m-auto footer-wrap">
           <hr />
@@ -64,5 +85,24 @@
         </a>
       </div>
     </div>
+    <script>
+      // 탭 버튼 함수
+      $.TabbtnFn = function () {
+        var Tabbtn = $(".TabbtnGroup .tabbtn");
+        var TabcontBox = $(".TabcontBox .tabcont");
+        Tabbtn.click(function () {
+          var thisIs = $(this);
+          Tabbtn.removeClass("tactive");
+          thisIs.addClass("tactive");
+          var idx = thisIs.index();
+          TabcontBox.hide();
+          TabcontBox.eq(idx).show();
+        });
+      };
+      $(function () {
+        // 탭 버튼 함수 호출
+        $.TabbtnFn();
+      });
+    </script>
   </body>
 </html>
