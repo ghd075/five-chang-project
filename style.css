@@ -213,6 +213,58 @@ header {
   top: 100px;
 }
 
+/* 문제4 */
+.problem4 {
+  background-color: #ddd;
+  border: 2px solid red;
+  margin: 10px;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(144, 19, 254);
+  color: white;
+  border: 3px solid #fff;
+}
+
+.item4 {
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+
+/* 문제5 */
+.problem5 {
+  background-color: #ddd;
+  border: 2px solid red;
+  margin: 10px;
+}
+
+.bix-box2 {
+  width: 400px;
+  height: 150px;
+  background-color: #333;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.box-top {
+  background-color: rgb(144, 19, 254);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box-bottom {
+  background-color: rgb(144, 19, 254);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 
 /* 푸터 스타일 */
 footer {
