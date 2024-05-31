@@ -113,7 +113,7 @@ header {
 
 .TabbtnGroup {
   overflow: auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .tabbtn {
@@ -143,6 +143,47 @@ header {
   display: block;
 }
 
+/* 문제 공통사항 */
+.main {
+  display: flex;
+  background-color: #ddd;
+  border: 2px solid red;
+  margin: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+  color: white;
+  border: 3px solid #fff;
+}
+
+/* 문제1 */
+.problem1 {
+  justify-content: space-between;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.item {
+  display: flex;
+}
+
+/* 문제2 */
+.problem2 {
+  flex-direction : column;
+}
+
+.item1 {
+  align-self: center;
+}
+
+.item2 {
+  align-self: flex-end;
+}
 
 /* 푸터 스타일 */
 footer {
