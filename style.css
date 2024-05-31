@@ -63,7 +63,7 @@ header {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
   line-height: 100px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
